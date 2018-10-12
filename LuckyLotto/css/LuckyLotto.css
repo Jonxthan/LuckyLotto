@@ -1,0 +1,63 @@
+/* Change font colours */
+
+h1 {
+   color: white;	
+}
+
+h2 {
+   color: white;	
+}
+
+p.intro {
+   color: white;	
+}
+
+p.select {
+	color: white;
+}
+
+#msg {
+
+color:white;	
+}
+
+/* changes jQuery datepicker colour */
+.ui-datepicker {
+   background: #333;
+   border: 1px solid #555;
+   color: #EEE;
+}
+
+/* Puts the lotto numbers on one line */
+p.numbers {
+display: inline-block;
+}
+
+/* change background picture */
+body {
+    background-image: url("../images/sky.jpg");
+	background-size: 100%;
+	background-position: top;
+}
+
+/* Center the container */
+#container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  text-align: center;
+  padding: 30px;
+  border: white dotted;
+  background-color: black;
+  border-radius: 25px;
+}
+
+/* borderlines ticket numbers */
+.ticket {
+	border: solid;
+	border-radius: 25px;
+	background-color: white; 
+	font-weight: bold;
+}

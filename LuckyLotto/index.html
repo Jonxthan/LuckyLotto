@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucky Lotto | Home</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/LuckyLotto.css">
+<script src = "js/luckylotto.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--JQuery datepicker-->
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</head>
+
+
+<body>
+<div id = "container">
+
+<h1 class = "intro">Welcome To Lucky Lotto</h1>
+<img src ="images/fourleaf.png" style="width:150px;">
+
+<h2 class = "intro">The World's <u><em>Luckiest</em></u> Number Generator!</h2>
+
+<!--HTML user input forms-->
+<!--Select Birthday-->
+<p class = "select">select your birthday  <input type="text" id="datepicker" value=""></p>
+
+
+
+<!--Select Starsign-->
+<p class = "select">select your starsign
+  <select name="starsign">
+    <option value="Aries">Aries</option>
+    <option value="Taurus">Taurus</option>
+    <option value="Gemini">Gemini</option>
+    <option value="Cancer">Cancer</option>
+    <option value="Leo">Leo</option>
+    <option value="Virgo">Virgo</option>
+    <option value="Libra">Libra</option>
+    <option value="Scorpio">Scorpio</option>
+    <option value="Sagittarius">Sagittarius</option>
+    <option value="Capricorn">Capricorn</option>
+    <option value="Libra">Libra</option>
+    <option value="Aquarius">Aquarius</option>
+    <option value="Pisces">Pisces</option>
+  </select>
+</p>
+
+<!--When button is clicked, execute function that generates numbers-->
+<center>
+<button type = "button" id = "button" onclick = "generate()">Magic Button</button>
+</center>
+<!--Document objects to be manipulated by JS function generate()-->
+
+<p id = "msg"></p>
+<div class = "ticket">
+<p class = "numbers" id = "number1">  Click the button to make your wildest dreams a reality! </p> 
+<p class = "numbers" id = "number2"></p> 
+<p class = "numbers" id = "number3"></p> 
+<p class = "numbers" id = "number4"></p> 
+<p class = "numbers" id = "number5"></p> 
+<p class = "numbers" id = "number6"></p> 
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
